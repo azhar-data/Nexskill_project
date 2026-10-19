@@ -1,5 +1,7 @@
 import numpy as np
 import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
 
 #load data from csv file
 df=pd.read_csv('Project 1/University_Entrepreneurship_Feasibility_Dataset1.csv')
@@ -20,4 +22,7 @@ print(df.info())
 #check null value
 print(df.isna().sum())
 
-#
+sns.lineplot(data=df,x='Technical_Skills',y='Innovation_Capability')
+
+sns.barplot(data=df,x='Technical_Skills',y='Academic_Performance')
+plt.show()

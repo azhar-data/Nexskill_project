@@ -3,10 +3,8 @@ import time
 import requests
 from bs4 import BeautifulSoup
  
-# ---------- SETTINGS (change these) ----------
-SEARCH = "smartphone"   # what to search on eBay
-PAGES = 3               # how many result pages
-# ---------------------------------------------
+SEARCH = "smartphone" 
+PAGES = 3               
  
 headers = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
@@ -16,7 +14,6 @@ headers = {
     "Referer": "https://www.google.com/",
 }
  
-# A session keeps cookies, so we look like a real visitor
 session = requests.Session()
 session.headers.update(headers)
 session.get("https://www.ebay.com/", timeout=20)   # visit home page first

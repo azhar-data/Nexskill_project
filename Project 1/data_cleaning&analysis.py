@@ -64,8 +64,9 @@ plt.show()
 fig, axes = plt.subplots(2, 3, figsize=(14, 7))
 for ax, col in zip(axes.ravel(), key_features):
     sns.histplot(df[col], bins=30, kde=True, color="#2f7de1", ax=ax)
-    ax.set_title(col)
+
 plt.tight_layout()
 plt.show()
+
 
 

@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
  
 # 1. LOAD DATA
 # Read the diamonds dataset (53,940 rows, 11 columns) from the csv file
-df = pd.read_csv('Project 1/10-diamonds.csv')
+df = pd.read_csv('1 project diamond file/10-diamonds.csv')
 print(df)
  
 # NOTE: these two lines do nothing in a .py script because the result is not printed.
